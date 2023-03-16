@@ -10,12 +10,23 @@ function App() {
   let height  = window.innerHeight
   // })
   const memory = navigator.appVersion
+  let memory2 = navigator.language
+  let memory3 = navigator.connection.downlink
+  let memory4 = navigator.userAgentData.brands.map((data: {brand: string, version: string}) => {
+    console.log(data);
+    return data.brand
+    
+  })
+  let memory5 = window.localStorage.url
+  // let memory6 = window.currentEntry.NavigationHistoryEntry.id
+
+  console.log(window);
+  
   
 
   return (
     <>
-    <div className='surrounding'>
-
+    
       <div className="title">
         <h1>Xavier Fenton</h1>
         
@@ -33,14 +44,23 @@ function App() {
       </div>
       </div>
 
+  <div className='fun-wrapper'>
+    <div className='fun-data '>
+        <div><p>{memory}</p></div>
+        <div>{width}x{height}</div>
+        <div>{memory2}</div>
+        <div>{memory3}</div>
+        <div>{memory4}</div>
+        <div>**{memory5}**</div>
+        {/* <div>{memory6}</div> */}
 
-    <div className='fun-data'>
-      <div><p>{memory}</p></div>
-      <div>{width}x{height}</div>
-      {timer}
-      <div id='countDown'></div>
+
+        
+        {!timer}
+        <div id='countDown'></div>
+      </div>
     </div>
-    </div>
+    
     
     </>
   );
