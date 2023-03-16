@@ -1,3 +1,7 @@
+* {
+  background-color: rgb(233, 233, 233);
+}
+
 .title{
   padding-left: 5px;
   text-align: center;
@@ -21,7 +25,7 @@ a {
 
 .btn-1{
   width: 300px;
-  height: 200px;
+  height: 80px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -57,7 +61,7 @@ span {
   width: calc(100% + 6px);
   /*100% plus double the times left values*/
   height: calc(100% - 10px);
-  background-color: #ffffff;
+  background-color: rgb(233, 233, 233);
   transition: all 0.5s ease-in-out;
   transform: scaleY(1);
 }
@@ -75,7 +79,7 @@ span {
   width: calc(100% - 10px);
   /*100% plus double the times left values*/
   height: calc(100% + 10px);
-  background-color: #ffffff;
+  background-color:rgb(233, 233, 233);
   transition: all 0.5s ease-in-out;
   transform: scaleX(1);
 }
@@ -87,5 +91,17 @@ span {
 }
 
 .fun-data{
+  display: flex;
+  flex-direction: column;
   text-align: center;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  height: auto;
+  
 }
+
+.fun-wrapper{
+    border: solid black;
+    width: 50%;
+  }
