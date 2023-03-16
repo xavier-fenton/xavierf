@@ -4,13 +4,12 @@
 }
 
 .links {
-  
-  
   display: flex;
   justify-content: center;
   align-items: center;
   /* min-height: 100vh; */
   font-size: 24px;
+  flex-direction: column;
 }
 
 
@@ -20,8 +19,7 @@ a {
   
 }
 
-.btn-1,
- {
+.btn-1{
   width: 300px;
   height: 200px;
   display: flex;
@@ -30,7 +28,7 @@ a {
   flex-direction: column;
 }
 /* Created by http://grohit.com/  */
-footer a,
+
 .btn-1 a,
  a {
   text-decoration: none;
@@ -86,4 +84,8 @@ span {
 .btn-1 a:hover::after,
  a:hover::after {
   transform: scaleX(0);
+}
+
+.fun-data{
+  text-align: center;
 }
